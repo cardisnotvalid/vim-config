@@ -77,6 +77,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'jiangmiao/auto-pairs' " Auto pairs
 Plug 'ervandew/supertab'    " Autocomplete
 Plug 'tpope/vim-surround'   " Surrounding pairs
+Plug 'garbas/vim-snipmate'  " Snippets
 
 call plug#end()
 
+let g:SuperTabCompleteCase = 'match' " Autocomplete match case
