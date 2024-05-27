@@ -20,12 +20,18 @@ set wrap
 " Clipboard settings
 set clipboard=unnamedplus
 
+" Configure expanding of tabs for various file types
+au BufRead,BufNewFile *.py set expandtab
+au BufRead,BufNewFile *.c set expandtab
+au BufRead,BufNewFile *.h set expandtab
+au BufRead,BufNewFile MakeFile* set expandtab
+
 " Indentation settings
-set autoindent
 set expandtab
+set softtabstop=4
 set shiftwidth=4
-set smartindent
 set tabstop=4
+set autoindent
 
 " Search settings
 set hlsearch
@@ -78,6 +84,7 @@ Plug 'jiangmiao/auto-pairs' " Auto pairs
 Plug 'ervandew/supertab'    " Autocomplete
 Plug 'tpope/vim-surround'   " Surrounding pairs
 Plug 'garbas/vim-snipmate'  " Snippets
+Plug 'tpope/vim-commentary' " Comment code
 
 call plug#end()
 
